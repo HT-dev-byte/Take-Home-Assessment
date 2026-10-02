@@ -1,0 +1,158 @@
+{
+  "capture_id": "repeatability_bedroom_run2_lidar",
+  "tier": "lidar",
+  "device_model": "iPhone 15 Pro Max",
+  "timestamp": "2026-08-15T15:00:00Z",
+  "processing_time_sec": 2.85,
+  "drift_corrected": true,
+  "property_summary": {
+    "total_floor_area_sq_m": 16.03,
+    "total_rooms": 1,
+    "confidence_interval": {
+      "lower": 15.9,
+      "upper": 16.16,
+      "margin_pct": 0.8
+    }
+  },
+  "rooms": {
+    "primary_bedroom": {
+      "room_id": "primary_bedroom",
+      "name": "Primary Bedroom (Repeat Capture Run 2)",
+      "dimensions": {
+        "ceiling_height_m": 2.704,
+        "ceiling_height_ci": {
+          "lower": 2.696,
+          "upper": 2.712
+        },
+        "floor_area_sq_m": 16.03,
+        "floor_area_ci": {
+          "lower": 15.95,
+          "upper": 16.11
+        },
+        "perimeter_m": 16.014
+      },
+      "walls": [
+        {
+          "wall_id": "primary_bedroom_w1",
+          "length_m": 4.004,
+          "length_ci": {
+            "lower": 3.999,
+            "upper": 4.009,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            0.0,
+            0.0
+          ],
+          "end_point": [
+            4.004,
+            0.0
+          ],
+          "orientation_deg": 0.0
+        },
+        {
+          "wall_id": "primary_bedroom_w2",
+          "length_m": 4.003,
+          "length_ci": {
+            "lower": 3.998,
+            "upper": 4.008,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            4.004,
+            0.0
+          ],
+          "end_point": [
+            4.004,
+            4.003
+          ],
+          "orientation_deg": 90.0
+        },
+        {
+          "wall_id": "primary_bedroom_w3",
+          "length_m": 4.004,
+          "length_ci": {
+            "lower": 3.999,
+            "upper": 4.009,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            4.004,
+            4.003
+          ],
+          "end_point": [
+            0.0,
+            4.003
+          ],
+          "orientation_deg": 180.0
+        },
+        {
+          "wall_id": "primary_bedroom_w4",
+          "length_m": 4.003,
+          "length_ci": {
+            "lower": 3.998,
+            "upper": 4.008,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            0.0,
+            4.003
+          ],
+          "end_point": [
+            0.0,
+            0.0
+          ],
+          "orientation_deg": 270.0
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "op_hall_bed",
+          "wall_id": "primary_bedroom_w4",
+          "type": "door",
+          "width_m": 0.852,
+          "width_ci": {
+            "lower": 0.844,
+            "upper": 0.86
+          },
+          "height_m": 2.1,
+          "offset_from_wall_start_m": 1.0
+        }
+      ]
+    }
+  },
+  "multi_room_stitched_plan": {
+    "adjacency_graph": [],
+    "room_placements": {
+      "primary_bedroom": {
+        "translation": [
+          8.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "polygon": [
+          [
+            8.0,
+            0.0
+          ],
+          [
+            12.004,
+            0.0
+          ],
+          [
+            12.004,
+            4.003
+          ],
+          [
+            8.0,
+            4.003
+          ]
+        ]
+      }
+    },
+    "drift_metric_m": 0.003
+  },
+  "damage_regions": [],
+  "concealed_damage_flags": [],
+  "scope_line_items": []
+}

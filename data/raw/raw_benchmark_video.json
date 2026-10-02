@@ -1,0 +1,78 @@
+{
+  "capture_id": "multi_room_video_01",
+  "tier": "video",
+  "device_model": "iPhone 15 Standard",
+  "timestamp": "2026-08-15T14:15:00Z",
+  "rooms": {
+    "living_room": {
+      "name": "Living Room",
+      "ceiling_height_m": 2.705,
+      "vertices": [[0.0, 0.0], [5.02, 0.0], [5.02, 4.01], [0.0, 4.01]],
+      "openings": [
+        {"opening_id": "op_living_hall", "wall_id": "living_room_w2", "type": "door", "width_m": 0.908, "height_m": 2.100},
+        {"opening_id": "op_living_win", "wall_id": "living_room_w1", "type": "window", "width_m": 1.512, "height_m": 1.200}
+      ],
+      "origin": [0.0, 0.0],
+      "rotation_deg": 0.0
+    },
+    "connector_hallway": {
+      "name": "Connector Hallway",
+      "ceiling_height_m": 2.703,
+      "vertices": [[0.0, 0.0], [3.01, 0.0], [3.01, 1.51], [0.0, 1.51]],
+      "openings": [
+        {"opening_id": "op_living_hall", "wall_id": "connector_hallway_w4", "type": "door", "width_m": 0.908, "height_m": 2.100},
+        {"opening_id": "op_hall_bed", "wall_id": "connector_hallway_w2", "type": "door", "width_m": 0.855, "height_m": 2.100},
+        {"opening_id": "op_hall_bath", "wall_id": "connector_hallway_w3", "type": "door", "width_m": 0.806, "height_m": 2.100}
+      ],
+      "origin": [5.02, 1.0],
+      "rotation_deg": 0.0
+    },
+    "primary_bedroom": {
+      "name": "Primary Bedroom (Furnished & Staged)",
+      "ceiling_height_m": 2.706,
+      "vertices": [[0.0, 0.0], [4.02, 0.0], [4.02, 4.01], [0.0, 4.01]],
+      "openings": [
+        {"opening_id": "op_hall_bed", "wall_id": "primary_bedroom_w4", "type": "door", "width_m": 0.855, "height_m": 2.100}
+      ],
+      "origin": [8.03, 0.0],
+      "rotation_deg": 0.0
+    },
+    "ensuite_bathroom": {
+      "name": "Ensuite Bathroom",
+      "ceiling_height_m": 2.702,
+      "vertices": [[0.0, 0.0], [3.01, 0.0], [3.01, 2.01], [0.0, 2.01]],
+      "openings": [
+        {"opening_id": "op_hall_bath", "wall_id": "ensuite_bathroom_w1", "type": "door", "width_m": 0.806, "height_m": 2.100}
+      ],
+      "origin": [5.02, 2.51],
+      "rotation_deg": 0.0
+    }
+  },
+  "adjacency": [
+    {"room_a": "living_room", "room_b": "connector_hallway", "connector_type": "door", "shared_opening_id": "op_living_hall"},
+    {"room_a": "connector_hallway", "room_b": "primary_bedroom", "connector_type": "door", "shared_opening_id": "op_hall_bed"},
+    {"room_a": "connector_hallway", "room_b": "ensuite_bathroom", "connector_type": "door", "shared_opening_id": "op_hall_bath"}
+  ],
+  "damage_regions": [
+    {
+      "damage_id": "staged_dmg_water",
+      "room_id": "primary_bedroom",
+      "surface_id": "primary_bedroom_w1",
+      "surface_type": "wall",
+      "damage_class": "water_stain",
+      "metric_extent_sq_m": 1.42,
+      "severity": "moderate",
+      "location_polygon": [[8.5, 0.5], [9.92, 0.5], [9.92, 1.5], [8.5, 1.5]]
+    },
+    {
+      "damage_id": "staged_dmg_crack",
+      "room_id": "primary_bedroom",
+      "surface_id": "primary_bedroom_w2",
+      "surface_type": "wall",
+      "damage_class": "shear_crack",
+      "metric_extent_sq_m": 1.12,
+      "severity": "severe",
+      "location_polygon": [[11.5, 1.0], [11.5, 2.12], [11.82, 2.12], [11.82, 1.0]]
+    }
+  ]
+}

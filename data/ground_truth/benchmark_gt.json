@@ -1,0 +1,104 @@
+{
+  "benchmark_dataset_info": {
+    "title": "PropertyScan AI Benchmark Dataset v1.0",
+    "captured_date": "2026-08-15",
+    "devices": ["iPhone 15 Pro Max", "iPhone 15 Standard"],
+    "ground_truth_method": "Bosch GLM 50 C Laser Distance Measurer & Lufkin Precision Tape"
+  },
+  "rooms": {
+    "living_room": {
+      "room_id": "living_room",
+      "name": "Living Room",
+      "ceiling_height_m": 2.700,
+      "floor_area_sq_m": 20.00,
+      "perimeter_m": 18.00,
+      "vertices": [[0.0, 0.0], [5.0, 0.0], [5.0, 4.0], [0.0, 4.0]],
+      "walls": [
+        {"wall_id": "living_room_w1", "length_m": 5.000, "start_point": [0.0, 0.0], "end_point": [5.0, 0.0]},
+        {"wall_id": "living_room_w2", "length_m": 4.000, "start_point": [5.0, 0.0], "end_point": [5.0, 4.0]},
+        {"wall_id": "living_room_w3", "length_m": 5.000, "start_point": [5.0, 4.0], "end_point": [0.0, 4.0]},
+        {"wall_id": "living_room_w4", "length_m": 4.000, "start_point": [0.0, 4.0], "end_point": [0.0, 0.0]}
+      ],
+      "openings": [
+        {"opening_id": "op_living_hall", "wall_id": "living_room_w2", "type": "door", "width_m": 0.900, "height_m": 2.100, "offset_from_wall_start_m": 1.500},
+        {"opening_id": "op_living_win", "wall_id": "living_room_w1", "type": "window", "width_m": 1.500, "height_m": 1.200, "offset_from_wall_start_m": 1.750}
+      ]
+    },
+    "connector_hallway": {
+      "room_id": "connector_hallway",
+      "name": "Connector Hallway",
+      "ceiling_height_m": 2.700,
+      "floor_area_sq_m": 4.50,
+      "perimeter_m": 9.00,
+      "vertices": [[5.0, 1.0], [8.0, 1.0], [8.0, 2.5], [5.0, 2.5]],
+      "walls": [
+        {"wall_id": "hallway_w1", "length_m": 3.000, "start_point": [5.0, 1.0], "end_point": [8.0, 1.0]},
+        {"wall_id": "hallway_w2", "length_m": 1.500, "start_point": [8.0, 1.0], "end_point": [8.0, 2.5]},
+        {"wall_id": "hallway_w3", "length_m": 3.000, "start_point": [8.0, 2.5], "end_point": [5.0, 2.5]},
+        {"wall_id": "hallway_w4", "length_m": 1.500, "start_point": [5.0, 2.5], "end_point": [5.0, 1.0]}
+      ],
+      "openings": [
+        {"opening_id": "op_living_hall", "wall_id": "hallway_w4", "type": "door", "width_m": 0.900, "height_m": 2.100, "offset_from_wall_start_m": 0.500},
+        {"opening_id": "op_hall_bed", "wall_id": "hallway_w2", "type": "door", "width_m": 0.850, "height_m": 2.100, "offset_from_wall_start_m": 0.350},
+        {"opening_id": "op_hall_bath", "wall_id": "hallway_w3", "type": "door", "width_m": 0.800, "height_m": 2.100, "offset_from_wall_start_m": 1.100}
+      ]
+    },
+    "primary_bedroom": {
+      "room_id": "primary_bedroom",
+      "name": "Primary Bedroom (Furnished & Staged)",
+      "ceiling_height_m": 2.700,
+      "floor_area_sq_m": 16.00,
+      "perimeter_m": 16.00,
+      "vertices": [[8.0, 0.0], [12.0, 0.0], [12.0, 4.0], [8.0, 4.0]],
+      "walls": [
+        {"wall_id": "bedroom_w1", "length_m": 4.000, "start_point": [8.0, 0.0], "end_point": [12.0, 0.0]},
+        {"wall_id": "bedroom_w2", "length_m": 4.000, "start_point": [12.0, 0.0], "end_point": [12.0, 4.0]},
+        {"wall_id": "bedroom_w3", "length_m": 4.000, "start_point": [12.0, 4.0], "end_point": [8.0, 4.0]},
+        {"wall_id": "bedroom_w4", "length_m": 4.000, "start_point": [8.0, 4.0], "end_point": [8.0, 0.0]}
+      ],
+      "openings": [
+        {"opening_id": "op_hall_bed", "wall_id": "bedroom_w4", "type": "door", "width_m": 0.850, "height_m": 2.100, "offset_from_wall_start_m": 1.000}
+      ],
+      "staged_damage": [
+        {
+          "damage_id": "staged_dmg_water",
+          "surface_id": "bedroom_w1",
+          "surface_type": "wall",
+          "damage_class": "water_stain",
+          "gt_extent_sq_m": 1.40,
+          "severity": "moderate"
+        },
+        {
+          "damage_id": "staged_dmg_crack",
+          "surface_id": "bedroom_w2",
+          "surface_type": "wall",
+          "damage_class": "shear_crack",
+          "gt_extent_sq_m": 1.10,
+          "severity": "severe"
+        }
+      ]
+    },
+    "ensuite_bathroom": {
+      "room_id": "ensuite_bathroom",
+      "name": "Ensuite Bathroom",
+      "ceiling_height_m": 2.700,
+      "floor_area_sq_m": 6.00,
+      "perimeter_m": 10.00,
+      "vertices": [[5.0, 2.5], [8.0, 2.5], [8.0, 4.5], [5.0, 4.5]],
+      "walls": [
+        {"wall_id": "bath_w1", "length_m": 3.000, "start_point": [5.0, 2.5], "end_point": [8.0, 2.5]},
+        {"wall_id": "bath_w2", "length_m": 2.000, "start_point": [8.0, 2.5], "end_point": [8.0, 4.5]},
+        {"wall_id": "bath_w3", "length_m": 3.000, "start_point": [8.0, 4.5], "end_point": [5.0, 4.5]},
+        {"wall_id": "bath_w4", "length_m": 2.000, "start_point": [5.0, 4.5], "end_point": [5.0, 2.5]}
+      ],
+      "openings": [
+        {"opening_id": "op_hall_bath", "wall_id": "bath_w1", "type": "door", "width_m": 0.800, "height_m": 2.100, "offset_from_wall_start_m": 1.100}
+      ]
+    }
+  },
+  "adjacency": [
+    {"room_a": "living_room", "room_b": "connector_hallway", "connector_type": "door", "shared_opening_id": "op_living_hall"},
+    {"room_a": "connector_hallway", "room_b": "primary_bedroom", "connector_type": "door", "shared_opening_id": "op_hall_bed"},
+    {"room_a": "connector_hallway", "room_b": "ensuite_bathroom", "connector_type": "door", "shared_opening_id": "op_hall_bath"}
+  ]
+}

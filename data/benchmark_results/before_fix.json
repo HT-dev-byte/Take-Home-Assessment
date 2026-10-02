@@ -1,0 +1,710 @@
+{
+  "capture_id": "multi_room_lidar_01",
+  "tier": "lidar",
+  "device_model": "iPhone 15 Pro Max",
+  "timestamp": "2026-08-15T14:00:00Z",
+  "processing_time_sec": 2.85,
+  "drift_corrected": false,
+  "property_summary": {
+    "total_floor_area_sq_m": 46.5,
+    "total_rooms": 4,
+    "confidence_interval": {
+      "lower": 46.13,
+      "upper": 46.87,
+      "margin_pct": 0.8
+    }
+  },
+  "rooms": {
+    "living_room": {
+      "room_id": "living_room",
+      "name": "Living Room",
+      "dimensions": {
+        "ceiling_height_m": 2.7,
+        "ceiling_height_ci": {
+          "lower": 2.692,
+          "upper": 2.708
+        },
+        "floor_area_sq_m": 20.0,
+        "floor_area_ci": {
+          "lower": 19.9,
+          "upper": 20.1
+        },
+        "perimeter_m": 18.0
+      },
+      "walls": [
+        {
+          "wall_id": "living_room_w1",
+          "length_m": 5.0,
+          "length_ci": {
+            "lower": 4.995,
+            "upper": 5.005,
+            "margin_pct": 0.1
+          },
+          "start_point": [
+            0.0,
+            0.0
+          ],
+          "end_point": [
+            5.0,
+            0.0
+          ],
+          "orientation_deg": 0.0
+        },
+        {
+          "wall_id": "living_room_w2",
+          "length_m": 4.0,
+          "length_ci": {
+            "lower": 3.995,
+            "upper": 4.005,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            5.0,
+            0.0
+          ],
+          "end_point": [
+            5.0,
+            4.0
+          ],
+          "orientation_deg": 90.0
+        },
+        {
+          "wall_id": "living_room_w3",
+          "length_m": 5.0,
+          "length_ci": {
+            "lower": 4.995,
+            "upper": 5.005,
+            "margin_pct": 0.1
+          },
+          "start_point": [
+            5.0,
+            4.0
+          ],
+          "end_point": [
+            0.0,
+            4.0
+          ],
+          "orientation_deg": 180.0
+        },
+        {
+          "wall_id": "living_room_w4",
+          "length_m": 4.0,
+          "length_ci": {
+            "lower": 3.995,
+            "upper": 4.005,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            0.0,
+            4.0
+          ],
+          "end_point": [
+            0.0,
+            0.0
+          ],
+          "orientation_deg": 270.0
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "op_living_hall",
+          "wall_id": "living_room_w2",
+          "type": "door",
+          "width_m": 0.9,
+          "width_ci": {
+            "lower": 0.892,
+            "upper": 0.908
+          },
+          "height_m": 2.1,
+          "offset_from_wall_start_m": 1.0
+        },
+        {
+          "opening_id": "op_living_win",
+          "wall_id": "living_room_w1",
+          "type": "window",
+          "width_m": 1.5,
+          "width_ci": {
+            "lower": 1.492,
+            "upper": 1.508
+          },
+          "height_m": 1.2,
+          "offset_from_wall_start_m": 1.0
+        }
+      ]
+    },
+    "connector_hallway": {
+      "room_id": "connector_hallway",
+      "name": "Connector Hallway",
+      "dimensions": {
+        "ceiling_height_m": 2.7,
+        "ceiling_height_ci": {
+          "lower": 2.692,
+          "upper": 2.708
+        },
+        "floor_area_sq_m": 4.5,
+        "floor_area_ci": {
+          "lower": 4.48,
+          "upper": 4.52
+        },
+        "perimeter_m": 9.0
+      },
+      "walls": [
+        {
+          "wall_id": "connector_hallway_w1",
+          "length_m": 3.0,
+          "length_ci": {
+            "lower": 2.995,
+            "upper": 3.005,
+            "margin_pct": 0.17
+          },
+          "start_point": [
+            0.0,
+            0.0
+          ],
+          "end_point": [
+            3.0,
+            0.0
+          ],
+          "orientation_deg": 0.0
+        },
+        {
+          "wall_id": "connector_hallway_w2",
+          "length_m": 1.5,
+          "length_ci": {
+            "lower": 1.495,
+            "upper": 1.505,
+            "margin_pct": 0.33
+          },
+          "start_point": [
+            3.0,
+            0.0
+          ],
+          "end_point": [
+            3.0,
+            1.5
+          ],
+          "orientation_deg": 90.0
+        },
+        {
+          "wall_id": "connector_hallway_w3",
+          "length_m": 3.0,
+          "length_ci": {
+            "lower": 2.995,
+            "upper": 3.005,
+            "margin_pct": 0.17
+          },
+          "start_point": [
+            3.0,
+            1.5
+          ],
+          "end_point": [
+            0.0,
+            1.5
+          ],
+          "orientation_deg": 180.0
+        },
+        {
+          "wall_id": "connector_hallway_w4",
+          "length_m": 1.5,
+          "length_ci": {
+            "lower": 1.495,
+            "upper": 1.505,
+            "margin_pct": 0.33
+          },
+          "start_point": [
+            0.0,
+            1.5
+          ],
+          "end_point": [
+            0.0,
+            0.0
+          ],
+          "orientation_deg": 270.0
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "op_living_hall",
+          "wall_id": "connector_hallway_w4",
+          "type": "door",
+          "width_m": 0.9,
+          "width_ci": {
+            "lower": 0.892,
+            "upper": 0.908
+          },
+          "height_m": 2.1,
+          "offset_from_wall_start_m": 1.0
+        },
+        {
+          "opening_id": "op_hall_bed",
+          "wall_id": "connector_hallway_w2",
+          "type": "door",
+          "width_m": 0.85,
+          "width_ci": {
+            "lower": 0.842,
+            "upper": 0.858
+          },
+          "height_m": 2.1,
+          "offset_from_wall_start_m": 1.0
+        },
+        {
+          "opening_id": "op_hall_bath",
+          "wall_id": "connector_hallway_w3",
+          "type": "door",
+          "width_m": 0.8,
+          "width_ci": {
+            "lower": 0.792,
+            "upper": 0.808
+          },
+          "height_m": 2.1,
+          "offset_from_wall_start_m": 1.0
+        }
+      ]
+    },
+    "primary_bedroom": {
+      "room_id": "primary_bedroom",
+      "name": "Primary Bedroom (Furnished & Staged)",
+      "dimensions": {
+        "ceiling_height_m": 2.7,
+        "ceiling_height_ci": {
+          "lower": 2.692,
+          "upper": 2.708
+        },
+        "floor_area_sq_m": 16.0,
+        "floor_area_ci": {
+          "lower": 15.92,
+          "upper": 16.08
+        },
+        "perimeter_m": 16.0
+      },
+      "walls": [
+        {
+          "wall_id": "primary_bedroom_w1",
+          "length_m": 4.0,
+          "length_ci": {
+            "lower": 3.995,
+            "upper": 4.005,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            0.0,
+            0.0
+          ],
+          "end_point": [
+            4.0,
+            0.0
+          ],
+          "orientation_deg": 0.0
+        },
+        {
+          "wall_id": "primary_bedroom_w2",
+          "length_m": 4.0,
+          "length_ci": {
+            "lower": 3.995,
+            "upper": 4.005,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            4.0,
+            0.0
+          ],
+          "end_point": [
+            4.0,
+            4.0
+          ],
+          "orientation_deg": 90.0
+        },
+        {
+          "wall_id": "primary_bedroom_w3",
+          "length_m": 4.0,
+          "length_ci": {
+            "lower": 3.995,
+            "upper": 4.005,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            4.0,
+            4.0
+          ],
+          "end_point": [
+            0.0,
+            4.0
+          ],
+          "orientation_deg": 180.0
+        },
+        {
+          "wall_id": "primary_bedroom_w4",
+          "length_m": 4.0,
+          "length_ci": {
+            "lower": 3.995,
+            "upper": 4.005,
+            "margin_pct": 0.12
+          },
+          "start_point": [
+            0.0,
+            4.0
+          ],
+          "end_point": [
+            0.0,
+            0.0
+          ],
+          "orientation_deg": 270.0
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "op_hall_bed",
+          "wall_id": "primary_bedroom_w4",
+          "type": "door",
+          "width_m": 0.85,
+          "width_ci": {
+            "lower": 0.842,
+            "upper": 0.858
+          },
+          "height_m": 2.1,
+          "offset_from_wall_start_m": 1.0
+        }
+      ]
+    },
+    "ensuite_bathroom": {
+      "room_id": "ensuite_bathroom",
+      "name": "Ensuite Bathroom",
+      "dimensions": {
+        "ceiling_height_m": 2.7,
+        "ceiling_height_ci": {
+          "lower": 2.692,
+          "upper": 2.708
+        },
+        "floor_area_sq_m": 6.0,
+        "floor_area_ci": {
+          "lower": 5.97,
+          "upper": 6.03
+        },
+        "perimeter_m": 10.0
+      },
+      "walls": [
+        {
+          "wall_id": "ensuite_bathroom_w1",
+          "length_m": 3.0,
+          "length_ci": {
+            "lower": 2.995,
+            "upper": 3.005,
+            "margin_pct": 0.17
+          },
+          "start_point": [
+            0.0,
+            0.0
+          ],
+          "end_point": [
+            3.0,
+            0.0
+          ],
+          "orientation_deg": 0.0
+        },
+        {
+          "wall_id": "ensuite_bathroom_w2",
+          "length_m": 2.0,
+          "length_ci": {
+            "lower": 1.995,
+            "upper": 2.005,
+            "margin_pct": 0.25
+          },
+          "start_point": [
+            3.0,
+            0.0
+          ],
+          "end_point": [
+            3.0,
+            2.0
+          ],
+          "orientation_deg": 90.0
+        },
+        {
+          "wall_id": "ensuite_bathroom_w3",
+          "length_m": 3.0,
+          "length_ci": {
+            "lower": 2.995,
+            "upper": 3.005,
+            "margin_pct": 0.17
+          },
+          "start_point": [
+            3.0,
+            2.0
+          ],
+          "end_point": [
+            0.0,
+            2.0
+          ],
+          "orientation_deg": 180.0
+        },
+        {
+          "wall_id": "ensuite_bathroom_w4",
+          "length_m": 2.0,
+          "length_ci": {
+            "lower": 1.995,
+            "upper": 2.005,
+            "margin_pct": 0.25
+          },
+          "start_point": [
+            0.0,
+            2.0
+          ],
+          "end_point": [
+            0.0,
+            0.0
+          ],
+          "orientation_deg": 270.0
+        }
+      ],
+      "openings": [
+        {
+          "opening_id": "op_hall_bath",
+          "wall_id": "ensuite_bathroom_w1",
+          "type": "door",
+          "width_m": 0.8,
+          "width_ci": {
+            "lower": 0.792,
+            "upper": 0.808
+          },
+          "height_m": 2.1,
+          "offset_from_wall_start_m": 1.0
+        }
+      ]
+    }
+  },
+  "multi_room_stitched_plan": {
+    "adjacency_graph": [
+      {
+        "room_a": "living_room",
+        "room_b": "connector_hallway",
+        "connector_type": "door",
+        "shared_opening_id": "op_living_hall"
+      },
+      {
+        "room_a": "connector_hallway",
+        "room_b": "primary_bedroom",
+        "connector_type": "door",
+        "shared_opening_id": "op_hall_bed"
+      },
+      {
+        "room_a": "connector_hallway",
+        "room_b": "ensuite_bathroom",
+        "connector_type": "door",
+        "shared_opening_id": "op_hall_bath"
+      }
+    ],
+    "room_placements": {
+      "living_room": {
+        "translation": [
+          0.0,
+          0.0
+        ],
+        "rotation_deg": 0.0,
+        "polygon": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            5.0,
+            0.0
+          ],
+          [
+            5.0,
+            4.0
+          ],
+          [
+            0.0,
+            4.0
+          ]
+        ]
+      },
+      "connector_hallway": {
+        "translation": [
+          5.12,
+          1.08
+        ],
+        "rotation_deg": 2.5,
+        "polygon": [
+          [
+            5.0,
+            1.0
+          ],
+          [
+            8.0,
+            1.0
+          ],
+          [
+            8.0,
+            2.5
+          ],
+          [
+            5.0,
+            2.5
+          ]
+        ]
+      },
+      "primary_bedroom": {
+        "translation": [
+          8.24,
+          0.16
+        ],
+        "rotation_deg": 5.0,
+        "polygon": [
+          [
+            8.0,
+            0.0
+          ],
+          [
+            12.0,
+            0.0
+          ],
+          [
+            12.0,
+            4.0
+          ],
+          [
+            8.0,
+            4.0
+          ]
+        ]
+      },
+      "ensuite_bathroom": {
+        "translation": [
+          5.36,
+          2.74
+        ],
+        "rotation_deg": 7.5,
+        "polygon": [
+          [
+            5.0,
+            2.5
+          ],
+          [
+            8.0,
+            2.5
+          ],
+          [
+            8.0,
+            4.5
+          ],
+          [
+            5.0,
+            4.5
+          ]
+        ]
+      }
+    },
+    "drift_metric_m": 0.185
+  },
+  "damage_regions": [
+    {
+      "damage_id": "staged_dmg_water",
+      "room_id": "primary_bedroom",
+      "surface_id": "primary_bedroom_w1",
+      "surface_type": "wall",
+      "damage_class": "water_stain",
+      "metric_extent_sq_m": 1.4,
+      "extent_ci": {
+        "lower": 1.33,
+        "upper": 1.47
+      },
+      "severity": "moderate",
+      "location_polygon": [
+        [
+          8.5,
+          0.5
+        ],
+        [
+          9.9,
+          0.5
+        ],
+        [
+          9.9,
+          1.5
+        ],
+        [
+          8.5,
+          1.5
+        ]
+      ]
+    },
+    {
+      "damage_id": "staged_dmg_crack",
+      "room_id": "primary_bedroom",
+      "surface_id": "primary_bedroom_w2",
+      "surface_type": "wall",
+      "damage_class": "shear_crack",
+      "metric_extent_sq_m": 1.1,
+      "extent_ci": {
+        "lower": 1.04,
+        "upper": 1.16
+      },
+      "severity": "severe",
+      "location_polygon": [
+        [
+          11.5,
+          1.0
+        ],
+        [
+          11.5,
+          2.1
+        ],
+        [
+          11.8,
+          2.1
+        ],
+        [
+          11.8,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "concealed_damage_flags": [
+    {
+      "flag_id": "flag_1",
+      "rule_id": "RULE_WATER_STAIN_PLUMBING",
+      "rule_name": "Adjacent Wet-Wall Moisture & Mold Risk",
+      "surface_id": "primary_bedroom_w1",
+      "room_id": "primary_bedroom",
+      "risk_level": "high",
+      "description": "Water stain on wall or ceiling near plumbing/wet stack indicates sub-surface drywall saturation & mold risk.",
+      "action_required": "Infrared thermal moisture scan, moisture meter probe, & sub-surface cavity inspection."
+    },
+    {
+      "flag_id": "flag_2",
+      "rule_id": "RULE_STRUCTURAL_CRACK_LOAD_BEARING",
+      "rule_name": "Diagonal Shear Stress & Structural Settlement",
+      "surface_id": "primary_bedroom_w2",
+      "room_id": "primary_bedroom",
+      "risk_level": "critical",
+      "description": "Diagonal shear crack over 1.0m on perimeter wall suggests foundational settlement or structural movement.",
+      "action_required": "Structural engineering assessment & laser leveling verification."
+    }
+  ],
+  "scope_line_items": [
+    {
+      "line_item_id": "item_1",
+      "item_code": "DRY-WTR-REPAIR",
+      "category": "Drywall & Painting",
+      "description": "Cut out wet drywall, apply stain-blocking primer, patch and paint surface",
+      "surface_id": "primary_bedroom_w1",
+      "quantity": 1.4,
+      "unit": "sq_m",
+      "unit_cost_usd": 95.0,
+      "estimated_cost_usd": 133.0
+    },
+    {
+      "line_item_id": "item_2",
+      "item_code": "STR-CRK-STITCH",
+      "category": "Structural & Masonry",
+      "description": "Epoxy injection crack repair, carbon fiber helical stitch, skim coat finish",
+      "surface_id": "primary_bedroom_w2",
+      "quantity": 1.1,
+      "unit": "linear_m",
+      "unit_cost_usd": 220.0,
+      "estimated_cost_usd": 242.0
+    }
+  ]
+}

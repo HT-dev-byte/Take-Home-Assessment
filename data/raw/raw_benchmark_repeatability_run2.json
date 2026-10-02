@@ -1,0 +1,19 @@
+{
+  "capture_id": "repeatability_bedroom_run2_lidar",
+  "tier": "lidar",
+  "device_model": "iPhone 15 Pro Max",
+  "timestamp": "2026-08-15T15:00:00Z",
+  "rooms": {
+    "primary_bedroom": {
+      "name": "Primary Bedroom (Repeat Capture Run 2)",
+      "ceiling_height_m": 2.704,
+      "vertices": [[0.0, 0.0], [4.004, 0.0], [4.004, 4.003], [0.0, 4.003]],
+      "openings": [
+        {"opening_id": "op_hall_bed", "wall_id": "primary_bedroom_w4", "type": "door", "width_m": 0.852, "height_m": 2.100}
+      ],
+      "origin": [8.0, 0.0],
+      "rotation_deg": 0.0
+    }
+  },
+  "adjacency": []
+}

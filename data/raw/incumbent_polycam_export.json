@@ -1,0 +1,27 @@
+{
+  "app_name": "Polycam AR FloorPlan",
+  "app_version": "3.14.2",
+  "export_date": "2026-08-15",
+  "device_model": "iPhone 15 Pro",
+  "rooms": {
+    "living_room": {
+      "ceiling_height_m": 2.720,
+      "floor_area_sq_m": 20.35,
+      "wall_1_length_m": 5.040,
+      "wall_2_length_m": 4.030,
+      "wall_3_length_m": 5.050,
+      "wall_4_length_m": 4.030,
+      "door_1_width_m": 0.930,
+      "window_1_width_m": 1.540
+    },
+    "primary_bedroom": {
+      "ceiling_height_m": 2.718,
+      "floor_area_sq_m": 16.28,
+      "wall_1_length_m": 4.035,
+      "wall_2_length_m": 4.030,
+      "wall_3_length_m": 4.040,
+      "wall_4_length_m": 4.030,
+      "door_1_width_m": 0.880
+    }
+  }
+}
